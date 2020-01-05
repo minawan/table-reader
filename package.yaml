@@ -24,6 +24,9 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - aeson >= 1.4 && < 2
+  - text >= 1.2 && < 2
 
 executables:
   table-reader-exe:
@@ -34,7 +37,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
+    - aeson >= 1.4 && < 2
+    - bytestring >= 0.10 && < 1
     - table-reader
+    - text >= 1.2 && < 2
 
 tests:
   table-reader-test:

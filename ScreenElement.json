@@ -1,0 +1,41 @@
+{
+  "tableName": "ScreenElement",
+  "tableColumns": [
+    {
+      "columnName": "name",
+      "columnType": "String"
+    },
+    {
+      "columnName": "category",
+      "columnType": "String"
+    },
+    {
+      "columnName": "xCoord",
+      "columnType": "Int"
+    },
+    {
+      "columnName": "yCoord",
+      "columnType": "Int"
+    },
+    {
+      "columnName": "shortcut",
+      "columnType": "Int"
+    }
+  ],
+  "tableLevels": [
+    {
+      "levelName": "category",
+      "sublevels": [
+        "name"
+      ]
+    },
+    {
+      "levelName": "name",
+      "sublevels": [
+        "xCoord",
+        "yCoord",
+        "shortcut"
+      ]
+    }
+  ]
+}
