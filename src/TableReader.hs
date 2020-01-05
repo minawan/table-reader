@@ -70,7 +70,7 @@ convertToHaskellLib (Table tableName tableColumns _) =
       ]
 
 convertToHaskellBin :: Table -> Text
-convertToHaskellBin (Table tableName tableColumns _) =
+convertToHaskellBin (Table tableName _ _) =
     Text.pack . unlines $
       [ "import Data.Csv (Header, decodeByName)"
       , "import qualified Data.ByteString.Lazy as B"
